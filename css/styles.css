@@ -1,0 +1,105 @@
+:root{
+    --color-gray: #95a5a6;
+    --color-link-blue: #487eb0;
+    --color-text-gray: #636e72;
+    --color-dark: #2d3436;
+    --color-popular: #e84118;
+    --color-technology: #10ac84;
+    --color-travel: #fbc531;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 2rem;
+    color: var(--color-dark);
+    font-size: 62.5%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--color-gray);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    width: 350px;
+    position: relative;
+    transition: 280ms all ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 2px 40px var(--color-gray);
+}
+
+.banner-image{
+    position: absolute;
+    object-fit: cover;
+    height: 14rem;
+    width: 100%;
+}
+
+.category-tag{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    padding: 0.5rem 1.3rem 0.5rem 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+.popular{
+    background-color: var(--color-popular);
+}
+
+.technology{
+    background-color: var(--color-technology);
+}
+
+.travel{
+    background-color: var(--color-travel);
+}
+
+.card__body{
+    margin: 15rem 1rem 1rem 1rem;
+}
+
+.blog-hashtag{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-link-blue);
+}
+
+.blog-title{
+    line-height: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: var(--color-dark);
+    font-size: 1.8rem;
+}
+
+.blog-description{
+    color: var(--color-text-gray);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.card__profile-info{
+    margin-top: 2rem;
+    color: var(--color-dark);
+    font-size: 1rem;
+}
