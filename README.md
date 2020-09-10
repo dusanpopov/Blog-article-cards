@@ -1,1 +1,1 @@
-Blog article cards made with HTML5 and CSS3. 📓
+Blog article cards made with HTML5 and CSS3. 📓👨‍💻 👩‍💻
